@@ -65,7 +65,7 @@ html, body{width: 100%;min-width: 1000px;min-height: 660px;position: relative}
 
 /*section2 style*/
 #bigLogo1{height:349px;background-image: url("img/GIF-2.gif");background-position: center bottom;background-repeat: no-repeat;}
-#bigLogo1 .img{position:absolute;width:242px;height:242px;background-image:url("img/section2_1.png");left: 129px;top: 99px;z-index: 8;}
+#bigLogo1 .img{position:absolute;width:242px;height:242px;background-image:url("img/section2_1.png");left: 129px;top: 109px;z-index: 8;}
 
 #sec2_content{width: 942px;height:234px;margin: 0 auto;position: relative;}
 .section2 p{position: absolute;width: 100%;text-align:left;font-size: 20px;color: #333333;}
