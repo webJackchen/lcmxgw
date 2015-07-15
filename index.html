@@ -3,7 +3,17 @@
 <head>
     <meta charset="utf-8">
     <title>官网首页</title>
-    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        var oCss = document.createElement("link");
+        var href = "",isLow = false;
+        oCss.rel = "stylesheet";
+        console.log(document.documentElement.clientHeight);
+        isLow = document.documentElement.clientHeight < 670 ? true:false;
+        href = isLow ?"style1.css":"style.css";
+        oCss.href = href;
+        var oScript = document.getElementsByTagName("script")[0];
+        oScript.parentNode.insertBefore(oCss,oScript);
+    </script>
 </head>
 <body>
     <ul id="menu">
@@ -17,50 +27,47 @@
         <img id="up" class="xia" src="img/section1_3.jpg">
         <div class="section section1">
             <div id="bigLogo" class="bigLogo">
-                <img class="img1" src="img/1.png" data-rel = "127,0,115,195">
-                <img class="img2" src="img/2.png" data-rel = "113,342,128,145">
-                <img class="img3" src="img/3.png" data-rel = "0,171,151,171">
+                <img class="img1" src="img/1.png" data-rel = "127,0,115,195" data-rel1 = "127,0,115,195">
+                <img class="img2" src="img/2.png" data-rel = "113,342,128,145" data-rel1 = "113,342,128,145">
+                <img class="img3" src="img/3.png" data-rel = "0,171,151,171" data-rel1 = "0,171,151,171">
             </div>
-            <p class="queue title1" data-rel="-300,0,40%,0">联创梦享企业管理中心</p>
-            <p class="queue title2" data-rel="-500,0,50%,0">DEFSHARE</p>
-            <p class="queue title3" data-rel="-800,0,60%,0"><img src="img/section1_2.png"/></p>
-            <p class="queue des" data-rel="-1000,0,75%,0">专注互联网，共享新财富!</p>
+            <p class="queue title1" data-rel="-300,0,48%,0" data-rel1="-300,0,33.47%,0">联创梦享企业管理中心</p>
+            <p class="queue title2" data-rel="-500,0,55%,0" data-rel1="-300,0,40.98%,0">DEFSHARE</p>
+            <p class="queue title3" data-rel="-800,0,65%,0" data-rel1="-300,0,48.26%,0"><img src="img/section1_2.png"/></p>
+            <p class="queue des" data-rel="-1000,0,80%,0" data-rel1="-300,0,61.3%,0">专注互联网，共享新财富!</p>
         </div>
         <div class="section section2">
             <div id="bigLogo1" class="bigLogo">
-                <img src="img/section2_1.png" data-rel="99,129,99,372">
+                <div class="img" data-rel="63,169,63,340" data-rel1="109,129,109,371" /></div>
             </div>
             <div id="sec2_content">
-                <p class="queue title1" data-rel="300,0,5,0">互联网产品建设领导品牌</p>
-                <p class="queue title2" data-rel="500,0,80,0">联创梦享集团总部设立于四川成都，在上海、北京、深圳、成都、郑州等地均设有办事机构。中心立</p>
-                <p class="queue title3" data-rel="600,0,118,0">足互联网，致力于系统设备研发、互联网产品研发、互联网运营、全网品牌整合营销等领域，业务覆盖互联</p>
-                <p class="queue des" data-rel="700,0,154,0">网金融、农业信息化、社区商业移动互联、智慧园区、智能家居、房地产、电子商务、环保等行业。旗下已</p>
-                <p class="queue des1" data-rel="800,0,192,0">拥有6家控股子公司与10家持股合作公司。</p>
+                <p class="queue title1" data-rel="600,0,32,0" data-rel1="300,0,98,0">互联网产品建设领导品牌</p>
+                <p class="queue title2" data-rel="900,0,102,0" data-rel1="600,0,168,0">联创梦享集团总部设立于四川成都，在上海、北京、深圳、成都、郑州等地均设有办事机构。中心立足互联网，致力于系统设备研发、互联网产品研发、互联网运营、全网品牌整合营销等领域，业务覆盖互联网金融、农业信息化、社区商业移动互联、智慧园区、智能家居、房地产、电子商务、环保等行业。旗下已拥有6家控股子公司与10家持股合作公司。</p>
             </div>
         </div>
         <div class="section section3">
             <div id="bigLogo3" class="bigLogo">
-                <img src="img/section3.jpg" data-rel="-100,77.5,99,77.5">
-                <p class="title1"data-rel="235,-600,235,0">联创梦享企业管理中心</p>
-                <p class="title2"data-rel="290,1000,290,0">控股子公司及持股合作公司</p>
+                <div class="img" data-rel="-100,101,57,101" data-rel1="-100,77.5,108,77.5"></div>
+                <p class="title1"data-rel="189,-600,189,0" data-rel1="235,-600,269,0">联创梦享企业管理中心</p>
+                <p class="title2"data-rel="232,1000,232,0" data-rel1="290,1000,324,0">控股子公司及持股合作公司</p>
             </div>
-            <ul id="trademark" class="sec3_ul1" data-rel="500,0,30,0">
-                <li class="icon3 Lt" data-rel="0,485,0,324"></li>
-                <li class="icon2 Lt" data-rel="0,485,0,163"></li>
-                <li class="icon1 Lt" data-rel="0,485,0,2"></li>
-                <li class="icon4" data-rel="0,485,0,485"></li>
-                <li class="icon7 Rt" data-rel="0,485,0,968"></li>
-                <li class="icon6 Rt" data-rel="0,485,0,807"></li>
-                <li class="icon5 Rt" data-rel="0,485,0,646"></li>
+            <ul id="trademark" class="sec3_ul1" data-rel="500,0,30,0" data-rel1="500,0,75,0">
+                <li class="icon1 Lt" data-rel="0,382,0,0" data-rel1="0,478,0,0"><a href="http://www.7g7y.com/" target="_blank"></a></li>
+                <li class="icon2 Lt" data-rel="0,382,0,128" data-rel1="0,478,0,161"><a href="http://www.decet.cn/" target="_blank"></a></li>
+                <li class="icon3 Lt" data-rel="0,382,0,256" data-rel1="0,478,0,320"><a href="http://www.defshare.com" target="_blank"></a></li>
+                <li class="icon4" data-rel="0,382,0,382" data-rel1="0,478,0,478"><a href="http://www.dsecet.com/" target="_blank"></a></li>
+                <li class="icon7 Rt" data-rel="0,382,0,510" data-rel1="0,478,0,638"><a href="http://www.qhetao.com/Home/Index/" target="_blank"></a></li>
+                <li class="icon6 Rt" data-rel="0,382,0,636" data-rel1="0,478,0,797"><a href="http://www.aipuju.com/Home/" target="_blank"></a></li>
+                <li class="icon5 Rt" data-rel="0,382,0,764" data-rel1="0,478,0,957"><a target="_blank"></a></li>
             </ul>
             <div id="sec3_content">
-                <ul class="sec3_ul2 queue" data-rel="800,0,40,0">
+                <ul class="sec3_ul2 queue" data-rel="800,0,40,0" data-rel1="800,0,145,0">
                     <li><a>物易联科技有限公司</a></li>
                     <li><a>家易居科技有限公司</a></li>
                     <li><a>金易畅科技有限公司</a></li>
                     <li><a>联合农业科技有限公司</a></li>
                 </ul>
-                <ul class="sec3_ul3 queue" data-rel="1200,0,90,0">
+                <ul class="sec3_ul3 queue" data-rel="1200,0,90,0" data-rel1="1200,0,212,0">
                     <li><a>柒秘制</a></li>
                     <li><a>鼎砥</a></li>
                     <li><a>舞台汇</a></li>
@@ -73,13 +80,15 @@
         </div>
         <div class="section section4">
             <div id="bigLogo4" class="bigLogo">
-                <img src="img/section4_1.png" data-rel="800,47.5,0,47.5">
+                <div class="img" data-rel="800,68,0,68" data-rel1="800,47.5,0,47.5"></div>
             </div>
             <div id="sec4_content">
-                <p class="queue addr" data-rel="300,0,0,0">地址：成都市青羊区顺城大街269号富力中心12楼1208号</p>
-                <p class="queue link" data-rel="500,0,70,0">邮编：610014<span class="ml70">传真：028-87776962 </span><span class="ml56">邮箱：service@defshare.org</span></p>
-                <p class="queue share" data-rel="800,0,160,0">
-                    <span class="s1"></span><span class="s2"></span><span class="s3"></span>
+                <p class="queue addr" data-rel="300,0,48,0" data-rel1="300,0,75,0">地址：成都市青羊区顺城大街269号富力中心12楼1208号</p>
+                <p class="queue link" data-rel="500,0,97,0" data-rel1="500,0,142,0">邮编：610014<span class="ml70">传真：028-87776962 </span><span class="ml56">邮箱：service@defshare.org</span></p>
+                <p class="queue share" data-rel="800,0,165,0" data-rel1="800,0,264,0">
+                    <span class="s1"><a href="http://weibo.com/u/5193152003?sudaref=www.defshare.com" target="_blank"></a></span>
+                    <span class="s2"><a href="http://t.qq.com/defengshangxiang" target="_blank"></a></span>
+                    <span class="s3"><a href="http://user.qzone.qq.com/2106114530/main" target="_blank"></a></span>
                 </p>
             </div>
         </div>
@@ -106,7 +115,7 @@
                 var queue = $(".section1 .queue"),
                      knock = 0;
                 bigLogoImg.each(function(i,elem){
-                    var dataArr = $(elem).attr("data-rel").split(",");
+                    var dataArr = isLow ? $(elem).attr("data-rel").split(","): $(elem).attr("data-rel1").split(",");
                     var T, L,O;
                     knock = i;
                     T = (status == "after") ? dataArr[2]:dataArr[0];
@@ -121,7 +130,7 @@
 
                 if(knock == bigLogoImg.length-1){
                     queue.delay(700).each(function(j,elem){
-                        var dataArr = $(elem).attr("data-rel").split(",");
+                        var dataArr = isLow ? $(elem).attr("data-rel").split(","): $(elem).attr("data-rel1").split(",");
                         var T, L, O;
                         T = (status == "after") ? dataArr[2]:dataArr[0];
                         L = (status == "after") ? dataArr[3]:dataArr[1];
@@ -142,8 +151,8 @@
         }
         function twoFn(status){
             return (function(){
-                var bigLogo1Img = $("#bigLogo1 img");
-                var bigLogo1ImgDataArr = bigLogo1Img.eq(0).attr("data-rel").split(",");
+                var bigLogo1Img = $("#bigLogo1").children();
+                var bigLogo1ImgDataArr = isLow ? bigLogo1Img.eq(0).attr("data-rel").split(","): bigLogo1Img.eq(0).attr("data-rel1").split(",");
                 var queue = $(".section2 .queue");
                 var T, L;
                 T = (status == "after") ? bigLogo1ImgDataArr[2]:bigLogo1ImgDataArr[0];
@@ -154,7 +163,7 @@
                 },1000)
 
                 queue.delay(700).each(function(j,elem){
-                    var dataArr = $(elem).attr("data-rel").split(",");
+                    var dataArr = isLow ? $(elem).attr("data-rel").split(","):$(elem).attr("data-rel1").split(",");
                     var T, L;
                     T = (status == "after") ? dataArr[2]:dataArr[0];
                     L = (status == "after") ? dataArr[3]:dataArr[1];
@@ -179,7 +188,7 @@
                     delayTime2 = 0;
 
                 bigLogo1Img.each(function(i,elem){
-                    var dataArr = $(elem).attr("data-rel").split(",");
+                    var dataArr = isLow ? $(elem).attr("data-rel").split(","):$(elem).attr("data-rel1").split(",");
                     var T, L,O;
                     T = (status == "after") ? dataArr[2]:dataArr[0];
                     L = (status == "after") ? dataArr[3]:dataArr[1];
@@ -191,7 +200,7 @@
                     },(i+1)*300).delay(i*200);
                 })
 
-                trademarkT = (status == "after")?20:-500;
+                trademarkT = (status == "after")?(isLow?20:75):-500;
                 delayTime1 = (status == "after")?0:500;
                 delayTime2 = (status == "after")?800:0;
                 var oLt = trademark.find(".Lt");
@@ -204,7 +213,7 @@
                 },delayTime1);
 
                 oLt.delay(delayTime2).each(function(j,elem){
-                    var dataArr = $(elem).attr("data-rel").split(",");
+                    var dataArr = isLow ? $(elem).attr("data-rel").split(","):$(elem).attr("data-rel1").split(",");
                     var T, L;
                     T = (status == "after") ? dataArr[2]:dataArr[0];
                     L = (status == "after") ? dataArr[3]:dataArr[1];
@@ -215,7 +224,7 @@
                     },500)
                 })
                 oRt.delay(delayTime2).each(function(j,elem){
-                    var dataArr = $(elem).attr("data-rel").split(",");
+                    var dataArr = isLow ? $(elem).attr("data-rel").split(","):$(elem).attr("data-rel1").split(",");
                     var T, L;
                     T = (status == "after") ? dataArr[2]:dataArr[0];
                     L = (status == "after") ? dataArr[3]:dataArr[1];
@@ -227,7 +236,7 @@
                 })
 
                 queue.delay(1000).each(function(j,elem){
-                    var dataArr = $(elem).attr("data-rel").split(",");
+                    var dataArr = isLow ? $(elem).attr("data-rel").split(","):$(elem).attr("data-rel1").split(",");
                     var T, L,O;
                     T = (status == "after") ? dataArr[2]:dataArr[0];
                     L = (status == "after") ? dataArr[3]:dataArr[1];
@@ -245,8 +254,8 @@
         }
         function fourFn(status){
             return (function(){
-                var bigLogo1Img = $("#bigLogo4 img");
-                var bigLogo1ImgDataArr = bigLogo1Img.eq(0).attr("data-rel").split(",");
+                var bigLogo1Img = $("#bigLogo4").children();
+                var bigLogo1ImgDataArr = isLow ? bigLogo1Img.eq(0).attr("data-rel").split(","):bigLogo1Img.eq(0).attr("data-rel1").split(",");
                 var queue = $(".section4 .queue"),
                      up = $("#up");
                 var B, L;
@@ -260,7 +269,7 @@
                     opacity:O
                 },1000)
                 queue.delay(1000).each(function(j,elem){
-                    var dataArr = $(elem).attr("data-rel").split(",");
+                    var dataArr = isLow ? $(elem).attr("data-rel").split(","):$(elem).attr("data-rel1").split(",");
                     var T, L,O;
                     T = (status == "after") ? dataArr[2]:dataArr[0];
                     L = (status == "after") ? dataArr[3]:dataArr[1];
