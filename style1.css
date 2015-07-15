@@ -8,7 +8,7 @@ html, body{width: 100%;min-width: 1000px;min-height: 600px;position: relative}
 .ml70{margin-left: 70px;}
 .ml56{margin-left: 56px;}
 /*mune style*/
-#menu{position: absolute; right: 20px; top: 70%; width: 90px; margin: -160px 0 0; padding: 0; list-style-type: none; z-index: 70;}
+#menu{position: absolute; right: 20px; top: 62%; width: 90px; margin: -160px 0 0; padding: 0; list-style-type: none; z-index: 70;}
 #menu li{width:10px;height:10px;border-radius:50%;background-color:#f2941b;margin:0 auto 15px;text-align: center;color: #fff;font: 12px "Microsoft Yahei";cursor: pointer;}
 #menu li.active{width: 40px;height: 20px;line-height: 20px;border-radius: 8px;}
 #page{width: 100%;min-width: 1000px;height: 100%;position: relative;}
