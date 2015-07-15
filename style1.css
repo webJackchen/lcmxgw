@@ -1,5 +1,6 @@
 /*style reset*/
-html, body ,div,p{margin: 0;padding: 0;width: 100%;height: 100%;}
+html, body ,div{margin: 0;padding: 0;width: 100%;height: 100%;font-family: "微软雅黑";}
+p{margin: 0;padding: 0;}
 ul,ol{list-style: none;margin: 0;padding: 0}
 /*common style*/
 html, body{width: 100%;min-width: 1000px;min-height: 600px;position: relative}
@@ -23,10 +24,10 @@ html, body{width: 100%;min-width: 1000px;min-height: 600px;position: relative}
 .bigLogo .img3{z-index: 3;top:0px;left: 171px;}
 
 
-.section1 .title1{position: absolute;width: 100%;text-align:center;height: 40px;top:500px;left:0;font-size: 32px;font-style: italic;font-weight: bold;opacity: 0;z-index: 5}
-.section1 .title2{position: absolute;width: 100%;text-align: center;top:600px;left:0;font-size: 30px;font-style: italic;font-weight: bold;color: #666666;opacity: 0;z-index: 5}
+.section1 .title1{position: absolute;width: 100%;text-align:center;height: 40px;top:500px;left:0;font-size: 32px;font-style: italic;opacity: 0;z-index: 5}
+.section1 .title2{position: absolute;width: 100%;text-align: center;top:600px;left:0;font-size: 30px;font-style: italic;color: #333333;opacity: 0;z-index: 5}
 .section1 .title3{position: absolute;width: 100%;text-align: center;top:750px;left:0;opacity: 0;;z-index: 5}
-.section1 .des{position: absolute;width: 100%;text-align: center;top:900px;left:0;color: #a7a7a7;font-size: 18px;opacity: 0;;z-index: 5}
+.section1 .des{position: absolute;width: 100%;text-align: center;top:900px;left:0;color: #333333;font-size: 18px;opacity: 0;;z-index: 5}
 .xia{position: absolute;bottom: 60px;left: 50%;margin-left: -55px;cursor: pointer;z-index: 9;display: none;
     animation:shank 2s infinite;
     -moz-animation:shank 2s infinite; /* Firefox */
@@ -66,21 +67,21 @@ html, body{width: 100%;min-width: 1000px;min-height: 600px;position: relative}
 #bigLogo1 .img{position:absolute;width:162px;height:162px;background-image:url("img/section2_2.png");left: 169px;top: 63px;z-index: 8;}
 
 #sec2_content{width: 930px;height:234px;margin: 0 auto;position: relative;}
-.section2 p{position: absolute;width: 100%;text-align:left;margin:0;font-size: 16px;color: #b8b8b8;opacity: 0}
-.section2 .title1{top:600px;left:0;font-size: 36px;color: #707070;text-align: center}
-.section2 .title2{top:900px;left:0;text-indent: 60px;line-height: 40px;}
+.section2 p{position: absolute;width: 100%;text-align:left;margin:0;font-size: 16px;color: #333333;opacity: 0}
+.section2 .title1{top:600px;left:0;font-size: 36px;text-align: center}
+.section2 .title2{top:900px;left:0;text-indent: 34px;line-height: 40px;}
 
 
 /*section3 style*/
 #bigLogo3{width: 340px;height: 266px;}
 #bigLogo3 .img{position:absolute;top:-100px;left: 101px;width:138px;height:115px;background-image:url("img/section3_2.png");background-repeat: no-repeat;background-position:center;opacity: 0 }
-#bigLogo3 p{position: absolute;width:100%;text-align: center;opacity: 0}
+#bigLogo3 p{position: absolute;width:100%;text-align: center;opacity: 0;color: #333333;}
 #bigLogo3 .title1{top:189px;left:-1000px;font-size: 28px;font-style: italic;opacity: 0}
 #bigLogo3 .title2{top:232px;left:1500px;font-size: 18px;opacity: 0}
 
 #sec3_content{width: 938px;height: 318px;margin:0 auto;position:relative;overflow: hidden;}
 #sec3_content ul{position: absolute;}
-#sec3_content ul li{float: left;color: #a3a3a3;font-size: 18px;}
+#sec3_content ul li{float: left;color: #333333;font-size: 18px;}
 
 .sec3_ul1{top: -500px;left: 0;}
 .sec3_ul2{top: 800px;left: 0;opacity: 0}
