@@ -5,9 +5,10 @@
     <title>联创梦享企业管理中心</title>
     <script type="text/javascript">
         var oCss = document.createElement("link");
-        var href = "",isLow = false;
+        var href = "",isLow = false,wh = 0;
         oCss.rel = "stylesheet";
-        isLow = document.documentElement.clientHeight < 800 ? true:false;
+        wh = document.documentElement.clientHeight;
+        isLow = wh < 800 ? true:false;
         href = isLow ?"style1.css":"style.css";
         oCss.href = href;
         var oScript = document.getElementsByTagName("script")[0];
@@ -23,7 +24,7 @@
     </ul>
     <div id="page">
         <div id="logo"></div>
-        <img id="up" class="xia" src="img/section1_3.jpg">
+        <img id="up" class="xia" src="img/section1_3.png">
         <div class="section section1">
             <div id="bigLogo" class="bigLogo">
                 <img class="img1" src="img/1.png" data-rel = "127,0,115,195" data-rel1 = "127,0,115,195">
@@ -117,8 +118,8 @@
                     var dataArr = isLow ? $(elem).attr("data-rel").split(","): $(elem).attr("data-rel1").split(",");
                     var T, L,O;
                     knock = i;
-                    T = (status == "after") ? dataArr[2]:dataArr[0];
-                    L = (status == "after") ? dataArr[3]:dataArr[1];
+                    T = (status == "after") ? (isLow?wh*dataArr[2]/600:dataArr[2]):dataArr[0];
+                    L = (status == "after") ? (isLow?wh*dataArr[3]/600:dataArr[3]):dataArr[1];
                     O = (status == "after") ? 1:0;
                     $(elem).animate({
                         top:T,
@@ -131,8 +132,8 @@
                     queue.delay(700).each(function(j,elem){
                         var dataArr = isLow ? $(elem).attr("data-rel").split(","): $(elem).attr("data-rel1").split(",");
                         var T, L, O;
-                        T = (status == "after") ? dataArr[2]:dataArr[0];
-                        L = (status == "after") ? dataArr[3]:dataArr[1];
+                        T = (status == "after") ? (isLow?wh*dataArr[2]/600:dataArr[2]):dataArr[0];
+                        L = (status == "after") ? (isLow?wh*dataArr[3]/600:dataArr[3]):dataArr[1];
                         O = (status == "after") ? 1:0;
 
                         $(elem).animate({
@@ -154,8 +155,8 @@
                 var bigLogo1ImgDataArr = isLow ? bigLogo1Img.eq(0).attr("data-rel").split(","): bigLogo1Img.eq(0).attr("data-rel1").split(",");
                 var queue = $(".section2 .queue");
                 var T, L;
-                T = (status == "after") ? bigLogo1ImgDataArr[2]:bigLogo1ImgDataArr[0];
-                L = (status == "after") ? bigLogo1ImgDataArr[3]:bigLogo1ImgDataArr[1];
+                T = (status == "after") ? (isLow?wh*bigLogo1ImgDataArr[2]/600:bigLogo1ImgDataArr[2]):bigLogo1ImgDataArr[0];
+                L = (status == "after") ? (isLow?wh*bigLogo1ImgDataArr[3]/600:bigLogo1ImgDataArr[3]):bigLogo1ImgDataArr[1];
                 bigLogo1Img.animate({
                     top:T,
                     left:L
@@ -164,8 +165,8 @@
                 queue.each(function(j,elem){
                     var dataArr = isLow ? $(elem).attr("data-rel").split(","):$(elem).attr("data-rel1").split(",");
                     var T, L;
-                    T = (status == "after") ? dataArr[2]:dataArr[0];
-                    L = (status == "after") ? dataArr[3]:dataArr[1];
+                    T = (status == "after") ? (isLow?wh*dataArr[2]/600:dataArr[2]):dataArr[0];
+                    L = (status == "after") ? (isLow?wh*dataArr[3]/600:dataArr[3]):dataArr[1];
                     O = (status == "after") ? 1:0;
 
                     $(elem).animate({
@@ -190,8 +191,8 @@
                 bigLogo1Img.delay(700).each(function(i,elem){
                     var dataArr = isLow ? $(elem).attr("data-rel").split(","):$(elem).attr("data-rel1").split(",");
                     var T, L,O;
-                    T = (status == "after") ? dataArr[2]:dataArr[0];
-                    L = (status == "after") ? dataArr[3]:dataArr[1];
+                    T = (status == "after") ? (isLow?wh*dataArr[2]/600:dataArr[2]):dataArr[0];
+                    L = (status == "after") ? (isLow?wh*dataArr[3]/600:dataArr[3]):dataArr[1];
                     O = (status == "after") ? 1:0;
                     $(elem).animate({
                         top:T,
@@ -200,7 +201,7 @@
                     },1000);
                 })
 
-                trademarkT = (status == "after")?(isLow?20:75):-500;
+                trademarkT = (status == "after")?(isLow?20*wh/600:75):-500;
                 delayTime1 = (status == "after")?0:1500;
                 delayTime2 = (status == "after")?700:0;
                 var oLt = trademark.find(".Lt");
@@ -215,8 +216,8 @@
                 oLt.delay(delayTime2).each(function(j,elem){
                     var dataArr = isLow ? $(elem).attr("data-rel").split(","):$(elem).attr("data-rel1").split(",");
                     var T, L;
-                    T = (status == "after") ? dataArr[2]:dataArr[0];
-                    L = (status == "after") ? dataArr[3]:dataArr[1];
+                    T = (status == "after") ? (isLow?wh*dataArr[2]/600:dataArr[2]):dataArr[0];
+                    L = (status == "after") ? (isLow?wh*dataArr[3]/600:dataArr[3]):dataArr[1];
 
                     $(elem).animate({
                         top: T ,
@@ -226,8 +227,8 @@
                 oRt.delay(delayTime2).each(function(j,elem){
                     var dataArr = isLow ? $(elem).attr("data-rel").split(","):$(elem).attr("data-rel1").split(",");
                     var T, L;
-                    T = (status == "after") ? dataArr[2]:dataArr[0];
-                    L = (status == "after") ? dataArr[3]:dataArr[1];
+                    T = (status == "after") ? (isLow?wh*dataArr[2]/600:dataArr[2]):dataArr[0];
+                    L = (status == "after") ? (isLow?wh*dataArr[3]/600:dataArr[3]):dataArr[1];
 
                     $(elem).animate({
                         top: T ,
@@ -238,8 +239,8 @@
                 queue.delay(200).each(function(j,elem){
                     var dataArr = isLow ? $(elem).attr("data-rel").split(","):$(elem).attr("data-rel1").split(",");
                     var T, L,O;
-                    T = (status == "after") ? dataArr[2]:dataArr[0];
-                    L = (status == "after") ? dataArr[3]:dataArr[1];
+                    T = (status == "after") ? (isLow?wh*dataArr[2]/600:dataArr[2]):dataArr[0];
+                    L = (status == "after") ? (isLow?wh*dataArr[3]/600:dataArr[3]):dataArr[1];
                     O = (status == "after") ? 1:0;
 
                     $(elem).animate({
@@ -260,8 +261,8 @@
                      up = $("#up");
                 var B, L;
 
-                B = (status == "after") ? bigLogo1ImgDataArr[2]:bigLogo1ImgDataArr[0];
-                L = (status == "after") ? bigLogo1ImgDataArr[3]:bigLogo1ImgDataArr[1];
+                B = (status == "after") ? (isLow?wh*bigLogo1ImgDataArr[2]/600:bigLogo1ImgDataArr[2]):bigLogo1ImgDataArr[0];
+                L = (status == "after") ? (isLow?wh*bigLogo1ImgDataArr[3]/600:bigLogo1ImgDataArr[3]):bigLogo1ImgDataArr[1];
                 O = (status == "after") ?1:0;
                 bigLogo1Img.animate({
                     bottom:B,
@@ -271,8 +272,8 @@
                 queue.delay(500).each(function(j,elem){
                     var dataArr = isLow ? $(elem).attr("data-rel").split(","):$(elem).attr("data-rel1").split(",");
                     var T, L,O;
-                    T = (status == "after") ? dataArr[2]:dataArr[0];
-                    L = (status == "after") ? dataArr[3]:dataArr[1];
+                    T = (status == "after") ? (isLow?wh*dataArr[2]/600:dataArr[2]):dataArr[0];
+                    L = (status == "after") ? (isLow?wh*dataArr[3]/600:dataArr[3]):dataArr[1];
                     O = (status == "after") ? 1:0;
 
                     $(elem).animate({

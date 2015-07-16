@@ -70,7 +70,7 @@ html, body{width: 100%;min-width: 1000px;min-height: 660px;position: relative}
 #sec2_content{width: 942px;height:234px;margin: 0 auto;position: relative;}
 .section2 p{position: absolute;width: 100%;text-align:left;font-size: 20px;color: #333333;}
 .section2 .title1{top:300px;left:0;font-size: 36px;text-align: center}
-.section2 .title2{top:500px;left:0;text-indent: 60px;line-height: 40px;}
+.section2 .title2{top:500px;left:0;text-indent: 40px;line-height: 40px;}
 
 
 /*section3 style*/
