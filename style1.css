@@ -81,7 +81,7 @@ html, body{width: 100%;min-width: 1000px;min-height: 600px;position: relative}
 #bigLogo3 .title2{top:232px;left:1500px;font-size: 18px;opacity: 0}
 
 #sec3_content{width: 938px;height: 318px;margin:0 auto;position:relative;overflow: hidden;}
-#sec3_content ul{position: absolute;}
+#sec3_content ul{position: absolute;list-style: none;}
 #sec3_content ul li{float: left;color: #333333;font-size: 18px;}
 
 .sec3_ul1{top: -500px;left: 0;}
