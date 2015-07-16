@@ -161,8 +161,7 @@
                     event.returnValue = false;
                 };
             }
-            /*
-             ......其他一些兼容性处理 */
+            /*......其他一些兼容性处理 */
             return event;
         };
         if (window.addEventListener) {
