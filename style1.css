@@ -18,7 +18,7 @@ html, body{width: 100%;min-width: 1000px;min-height: 600px;position: relative}
 
 
 #logo{position:absolute;width:230px;height: 30px;background:url("img/section1_1.png") no-repeat;left:30px;top: -127px;  }
-.bigLogo{width: 500px;height:220px;position: relative;overflow:hidden;margin: 0 auto;}
+.bigLogo{width: 500px;height:215px;position: relative;overflow:hidden;margin: 0 auto;}
 .bigLogo img{position: absolute;opacity: 0;}
 .bigLogo .img1{width:124px;height:110px;z-index: 2;top: 127px;left: 0px}
 .bigLogo .img2{width:124px;height:110px;z-index: 1;top: 113px;left: 342px}
