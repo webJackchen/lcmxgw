@@ -7,7 +7,7 @@
         var oCss = document.createElement("link");
         var href = "",isLow = false,wh = 0;
         oCss.rel = "stylesheet";
-        wh = document.documentElement.clientHeight;
+        wh = document.documentElement.clientHeight < 600 ? 600 : document.documentElement.clientHeight;
         isLow = wh < 800 ? true:false;
         href = isLow ?"style1.css":"style.css";
         oCss.href = href;
@@ -27,9 +27,9 @@
         <img id="up" class="xia" src="img/section1_3.png">
         <div class="section section1">
             <div id="bigLogo" class="bigLogo">
-                <img class="img1" src="img/1.png" data-rel = "127,0,115,195" data-rel1 = "127,0,115,195">
-                <img class="img2" src="img/2.png" data-rel = "113,342,128,145" data-rel1 = "113,342,128,145">
-                <img class="img3" src="img/3.png" data-rel = "0,171,151,171" data-rel1 = "0,171,151,171">
+                <img class="img1" src="img/1.png" data-rel = "127,0,79,206" data-rel1 = "127,0,115,195">
+                <img class="img2" src="img/2.png" data-rel = "113,342,90,166" data-rel1 = "113,342,128,145">
+                <img class="img3" src="img/3.png" data-rel = "0,171,109,188" data-rel1 = "0,171,151,171">
             </div>
             <p class="queue title1" data-rel="500,0,216,0" data-rel1="500,0,33.47%,0">联创梦享企业管理中心</p>
             <p class="queue title2" data-rel="600,0,274,0" data-rel1="600,0,40.98%,0">DEFSHARE</p>
@@ -38,7 +38,7 @@
         </div>
         <div class="section section2">
             <div id="bigLogo1" class="bigLogo">
-                <div class="img" data-rel="63,169,63,340" data-rel1="109,129,109,371" /></div>
+                <div class="img" data-rel="63,169,63,340" data-rel1="109,129,109,371"></div>
             </div>
             <div id="sec2_content">
                 <p class="queue title1" data-rel="600,0,32,0" data-rel1="600,0,98,0">互联网产品建设领导品牌</p>
@@ -118,8 +118,8 @@
                     var dataArr = isLow ? $(elem).attr("data-rel").split(","): $(elem).attr("data-rel1").split(",");
                     var T, L,O;
                     knock = i;
-                    T = (status == "after") ? (isLow?wh*dataArr[2]/600:dataArr[2]):dataArr[0];
-                    L = (status == "after") ? (isLow?wh*dataArr[3]/600:dataArr[3]):dataArr[1];
+                    T = (status == "after") ? (isLow?dataArr[2]:dataArr[2]):dataArr[0];
+                    L = (status == "after") ? (isLow?dataArr[3]:dataArr[3]):dataArr[1];
                     O = (status == "after") ? 1:0;
                     $(elem).animate({
                         top:T,
@@ -191,8 +191,8 @@
                 bigLogo1Img.delay(700).each(function(i,elem){
                     var dataArr = isLow ? $(elem).attr("data-rel").split(","):$(elem).attr("data-rel1").split(",");
                     var T, L,O;
-                    T = (status == "after") ? (isLow?wh*dataArr[2]/600:dataArr[2]):dataArr[0];
-                    L = (status == "after") ? (isLow?wh*dataArr[3]/600:dataArr[3]):dataArr[1];
+                    T = (status == "after") ? (isLow?dataArr[2]:dataArr[2]):dataArr[0];
+                    L = (status == "after") ? (isLow?dataArr[3]:dataArr[3]):dataArr[1];
                     O = (status == "after") ? 1:0;
                     $(elem).animate({
                         top:T,
@@ -216,8 +216,8 @@
                 oLt.delay(delayTime2).each(function(j,elem){
                     var dataArr = isLow ? $(elem).attr("data-rel").split(","):$(elem).attr("data-rel1").split(",");
                     var T, L;
-                    T = (status == "after") ? (isLow?wh*dataArr[2]/600:dataArr[2]):dataArr[0];
-                    L = (status == "after") ? (isLow?wh*dataArr[3]/600:dataArr[3]):dataArr[1];
+                    T = (status == "after") ? (isLow?dataArr[2]:dataArr[2]):dataArr[0];
+                    L = (status == "after") ? (isLow?dataArr[3]:dataArr[3]):dataArr[1];
 
                     $(elem).animate({
                         top: T ,
@@ -227,8 +227,8 @@
                 oRt.delay(delayTime2).each(function(j,elem){
                     var dataArr = isLow ? $(elem).attr("data-rel").split(","):$(elem).attr("data-rel1").split(",");
                     var T, L;
-                    T = (status == "after") ? (isLow?wh*dataArr[2]/600:dataArr[2]):dataArr[0];
-                    L = (status == "after") ? (isLow?wh*dataArr[3]/600:dataArr[3]):dataArr[1];
+                    T = (status == "after") ? (isLow?dataArr[2]:dataArr[2]):dataArr[0];
+                    L = (status == "after") ? (isLow?dataArr[3]:dataArr[3]):dataArr[1];
 
                     $(elem).animate({
                         top: T ,
