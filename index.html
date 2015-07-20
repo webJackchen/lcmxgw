@@ -8,7 +8,7 @@
         var href = "",isLow = false,wh = 0;
         oCss.rel = "stylesheet";
         wh = document.documentElement.clientHeight < 600 ? 600 : document.documentElement.clientHeight;
-        isLow = wh < 790 ? true:false;
+        isLow = wh < 800 ? true:false;
         href = isLow ?"style1.css":"style.css";
         oCss.href = href;
         var oScript = document.getElementsByTagName("script")[0];
@@ -31,10 +31,10 @@
                 <img class="img2" src="img/2.png" data-rel = "113,342,84,166" data-rel1 = "113,342,128,145">
                 <img class="img3" src="img/3.png" data-rel = "0,171,104,188" data-rel1 = "0,171,151,171">
             </div>
-            <p class="queue title1" data-rel="500,0,216,0" data-rel1="500,0,33.47%,0">联创梦享企业管理中心</p>
-            <p class="queue title2" data-rel="600,0,274,0" data-rel1="600,0,40.98%,0">DEFSHARE</p>
-            <p class="queue title3" data-rel="750,0,328,0" data-rel1="750,0,48.26%,0"><img src="img/section1_2.png"/></p>
-            <p class="queue des" data-rel="900,0,454,0" data-rel1="900,0,61.3%,0">专注互联网，共享新财富!</p>
+            <p class="queue title1" data-rel="500,0,216,0" data-rel1="500,0,303,0">联创梦享企业管理中心</p>
+            <p class="queue title2" data-rel="600,0,274,0" data-rel1="600,0,375,0">DEFSHARE</p>
+            <p class="queue title3" data-rel="750,0,328,0" data-rel1="750,0,444,0"><img src="img/section1_2.png"/></p>
+            <p class="queue des" data-rel="900,0,454,0" data-rel1="900,0,558,0">专注互联网，共享新财富!</p>
         </div>
         <div class="section section2">
             <div id="bigLogo1" class="bigLogo">
@@ -118,7 +118,7 @@
                     var dataArr = isLow ? $(elem).attr("data-rel").split(","): $(elem).attr("data-rel1").split(",");
                     var T, L,O;
                     knock = i;
-                    T = (status == "after") ? dataArr[2]:dataArr[0];
+                    T = (status == "after") ? (isLow?dataArr[2]:wh*dataArr[2]/900):dataArr[0];
                     L = (status == "after") ? dataArr[3]:dataArr[1];
                     O = (status == "after") ? 1:0;
                     $(elem).animate({
@@ -132,8 +132,8 @@
                     queue.delay(700).each(function(j,elem){
                         var dataArr = isLow ? $(elem).attr("data-rel").split(","): $(elem).attr("data-rel1").split(",");
                         var T, L, O;
-                        T = (status == "after") ? (isLow?wh*dataArr[2]/600:dataArr[2]):dataArr[0];
-                        L = (status == "after") ? (isLow?wh*dataArr[3]/600:dataArr[3]):dataArr[1];
+                        T = (status == "after") ? (isLow?wh*dataArr[2]/600:wh*dataArr[2]/900):dataArr[0];
+                        L = (status == "after") ? (isLow?wh*dataArr[3]/600:wh*dataArr[3]/900):dataArr[1];
                         O = (status == "after") ? 1:0;
 
                         $(elem).animate({
@@ -165,8 +165,8 @@
                 queue.each(function(j,elem){
                     var dataArr = isLow ? $(elem).attr("data-rel").split(","):$(elem).attr("data-rel1").split(",");
                     var T, L;
-                    T = (status == "after") ? (isLow?wh*dataArr[2]/600:dataArr[2]):dataArr[0];
-                    L = (status == "after") ? (isLow?wh*dataArr[3]/600:dataArr[3]):dataArr[1];
+                    T = (status == "after") ? (isLow?wh*dataArr[2]/600:wh*dataArr[2]/900):dataArr[0];
+                    L = (status == "after") ? (isLow?wh*dataArr[3]/600:wh*dataArr[3]/900):dataArr[1];
                     O = (status == "after") ? 1:0;
 
                     $(elem).animate({
@@ -201,7 +201,7 @@
                     },1000);
                 })
 
-                trademarkT = (status == "after")?(isLow?20*wh/600:75):-500;
+                trademarkT = (status == "after")?(isLow?20*wh/600:wh*75/900):-500;
                 delayTime1 = (status == "after")?0:1500;
                 delayTime2 = (status == "after")?700:0;
                 var oLt = trademark.find(".Lt");
@@ -239,8 +239,8 @@
                 queue.delay(200).each(function(j,elem){
                     var dataArr = isLow ? $(elem).attr("data-rel").split(","):$(elem).attr("data-rel1").split(",");
                     var T, L,O;
-                    T = (status == "after") ? (isLow?wh*dataArr[2]/600:dataArr[2]):dataArr[0];
-                    L = (status == "after") ? (isLow?wh*dataArr[3]/600:dataArr[3]):dataArr[1];
+                    T = (status == "after") ? (isLow?wh*dataArr[2]/600:wh*dataArr[2]/900):dataArr[0];
+                    L = (status == "after") ? (isLow?wh*dataArr[3]/600:wh*dataArr[3]/900):dataArr[1];
                     O = (status == "after") ? 1:0;
 
                     $(elem).animate({
@@ -261,8 +261,8 @@
                      up = $("#up");
                 var B, L;
 
-                B = (status == "after") ? (isLow?wh*bigLogo1ImgDataArr[2]/600:bigLogo1ImgDataArr[2]):bigLogo1ImgDataArr[0];
-                L = (status == "after") ? (isLow?wh*bigLogo1ImgDataArr[3]/600:bigLogo1ImgDataArr[3]):bigLogo1ImgDataArr[1];
+                B = (status == "after") ? (isLow?wh*bigLogo1ImgDataArr[2]/600:wh*bigLogo1ImgDataArr[2]/900):bigLogo1ImgDataArr[0];
+                L = (status == "after") ? (isLow?wh*bigLogo1ImgDataArr[3]/600:wh*bigLogo1ImgDataArr[3]/900):bigLogo1ImgDataArr[1];
                 O = (status == "after") ?1:0;
                 bigLogo1Img.animate({
                     bottom:B,
@@ -272,8 +272,8 @@
                 queue.delay(500).each(function(j,elem){
                     var dataArr = isLow ? $(elem).attr("data-rel").split(","):$(elem).attr("data-rel1").split(",");
                     var T, L,O;
-                    T = (status == "after") ? (isLow?wh*dataArr[2]/600:dataArr[2]):dataArr[0];
-                    L = (status == "after") ? (isLow?wh*dataArr[3]/600:dataArr[3]):dataArr[1];
+                    T = (status == "after") ? (isLow?wh*dataArr[2]/600:wh*dataArr[2]/900):dataArr[0];
+                    L = (status == "after") ? (isLow?wh*dataArr[3]/600:wh*dataArr[3]/900):dataArr[1];
                     O = (status == "after") ? 1:0;
 
                     $(elem).animate({
