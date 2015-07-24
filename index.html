@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>联创梦享企业管理中心</title>
     <script type="text/javascript">
+        if (navigator.userAgent.match(/mobile/i)) {
+            window.location.href = "http://webjackchen.github.io/lcmxgw_wap/";
+        }
         var oCss = document.createElement("link");
         var href = "",isLow = false,wh = 0;
         oCss.rel = "stylesheet";
@@ -132,8 +135,8 @@
                     queue.delay(700).each(function(j,elem){
                         var dataArr = isLow ? $(elem).attr("data-rel").split(","): $(elem).attr("data-rel1").split(",");
                         var T, L, O;
-                        T = (status == "after") ? (isLow?wh*dataArr[2]/600:wh*dataArr[2]/900):dataArr[0];
-                        L = (status == "after") ? (isLow?wh*dataArr[3]/600:wh*dataArr[3]/900):dataArr[1];
+                        T = (status == "after") ? (isLow?wh*dataArr[2]/600:dataArr[2]):dataArr[0];
+                        L = (status == "after") ? (isLow?wh*dataArr[3]/600:dataArr[3]):dataArr[1];
                         O = (status == "after") ? 1:0;
 
                         $(elem).animate({
